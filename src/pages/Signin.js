@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import AuthContext from '../context/AuthContext'
 import './signin.css'
+import { Link } from 'react-router-dom'
 const Signin = () =>{
 
 let {signinUser} = useContext(AuthContext)
@@ -23,6 +24,7 @@ let {signinUser} = useContext(AuthContext)
                     </div>
                     <button type="submit" id="submit-button">Sign In</button>
                 </form>
+                <Link to = '/login'>already have an account? login</Link>
             </div>
         </body>
     )

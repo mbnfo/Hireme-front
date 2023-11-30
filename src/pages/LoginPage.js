@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import AuthContext from '../context/AuthContext';
 import './signin.css'
+import { Link } from 'react-router-dom'
 
 const LoginPage = () => {
     let{loginUser} = useContext(AuthContext)
@@ -19,6 +20,8 @@ const LoginPage = () => {
                     </div>
                     <button type="submit" id="submit-button">Login</button>
                 </form>
+                <Link to = '/signin'>Don't have an account? signin</Link>
+                <p>suggested testing account...name = fana...password = 123456789</p>
             </div>
         </body>
     )
