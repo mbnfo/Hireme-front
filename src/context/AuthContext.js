@@ -44,7 +44,7 @@ export const AuthProvider = ({children}) =>{
         let data = await response.json()
         if(response.status === 200){
             login(data)
-            window.location.href= '/' 
+            window.location.href= '/Hireme-front' 
             console.log(data)
         }
         else{

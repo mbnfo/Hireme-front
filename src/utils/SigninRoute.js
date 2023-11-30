@@ -7,7 +7,7 @@ const SigninRoute = ({children, ...rest}) => {
     const {user} = useContext(AuthContext)
 
     return (
-        <Route {...rest}>{!user?<Redirect to = "/signin"/>: children}</Route>
+        <Route {...rest}>{!user?<Redirect to = "/login"/>: children}</Route>
     )
 }
 
